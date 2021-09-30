@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Doc</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts/dates.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="h-title">Your Docs</div>
+</div>
+
+<div class="content">
+
+    <div class="doc-info">
+
+        <div class="doc-name">
+            Претензия на кого то 
+        </div>
+
+        <div class="doc-number">
+            123-123-124-21
+        </div>
+
+        <div class="doc-category">
+            претензия
+        </div>
+
+        <div class="description">
+            Этот документ это самое, ну это, как его там, ну вы поняли, короче да, то самое. Юристы, не юристы и аисты удостоверились в верности данного документа, все круто. Гарантия наверное есть, ну это как пойдет. Возможна замена документа по гарантии (на такой же).
+        </div>
+
+    </div>
+
+    <div class="claim doc-form info-wrapper">
+        <label for="name">Имя</label>
+        <input type="text" id="name">
+        
+        <label for="lastName">Фамилия</label>
+        <input type="text" id="lastName">
+        
+        <label for="patronymic">Отчество</label>
+        <input type="text" id="patronymic">
+        
+        <label for="address">Адрес</label>
+        <input type="text" id="address">
+
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone">
+
+        <label>Дата</label>
+        <div class="date-input">
+
+            <div class="day" id="day">1</div>
+            <div class="month" id="month">Января</div>
+            <div class="year" id="year">2020</div>
+
+            <script>
+                let eventDates = new DatesChooser();
+                console.log(eventDates.Error);
+            </script>
+        </div>
+
+        <label for="evil-person">Лицо, которому предъявляется претензия</label>
+        <input type="text" id="evil-person">
+
+        <label for="object">Предмет претензии</label>
+        <textarea name="object" id="object" cols="30" rows="10"></textarea>
+
+        <label for="prediavi">Выявленые нарушения</label>
+        <textarea name="prediavi" id="prediavi" cols="30" rows="10"></textarea>
+
+        <label for="requirement">Требования</label>
+        <textarea name="requirement" id="requirement" cols="30" rows="10"></textarea>
+        
+        <div class="order-btn">Оформить</div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="f-title">Your Docs 2020</div>
+</div>
+
+</body>
+</html>
